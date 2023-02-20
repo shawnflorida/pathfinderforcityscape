@@ -1,0 +1,17 @@
+Index: src/main/java/com/example/demo1/Tile.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo1/Tile.java b/src/main/java/com/example/demo1/Tile.java
+--- a/src/main/java/com/example/demo1/Tile.java	
++++ b/src/main/java/com/example/demo1/Tile.java	(date 1676796065624)
+@@ -21,7 +21,7 @@
+     static String image = "C:\\Users\\lorda\\IdeaProjects\\demo1\\src\\main\\resources\\assets\\roads\\tiles.png";
+     static  String imagePathFromImageViewer = "C:\\Users\\lorda\\IdeaProjects\\demo1\\src\\main\\resources\\assets\\city\\1.png";
+ 
+-    public static enum Type
++    public enum Type
+     {
+         SELECT,
+         START,

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="780.0" maxWidth="1135.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="775.0" prefWidth="1135.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appdev.mainController">
+<children>
+    <AnchorPane cache="true" prefHeight="90.0" prefWidth="1135.0" style="-fx-background-color: transparent;">
+        <children>
+            <Button fx:id="addButtonMenu" layoutX="246.0" layoutY="31.0" mnemonicParsing="false" onAction="#switchToPicker" prefHeight="25.6" prefWidth="52.0" style="-fx-background-color: trasnparent;" text="ADD">
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+          <Button fx:id="addRoad" layoutX="701.0" layoutY="28.0" mnemonicParsing="false" onAction="#switchToPicker" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: transparent;" text="ADD ROAD">
+              <cursor>
+                  <Cursor fx:constant="HAND" />
+              </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+          </Button>
+            <Button fx:id="deleteButtonMenu" layoutX="308.0" layoutY="31.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: trasparent;" text="DELETE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="saveButtonMenu" layoutX="384.0" layoutY="31.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="SAVE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="72.0" fitWidth="70.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/mapme-main-page.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="100.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAPME">
+               <font>
+                  <Font name="Perpetua Titling MT Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="currentProjectTypeLabel" layoutX="838.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello, Welcome" wrappingWidth="251.73663330078125">
+               <font>
+                  <Font name="Perpetua Titling MT Bold" size="24.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="editChoiceBoxMenu" layoutX="490.0" layoutY="34.0" prefHeight="15.0" prefWidth="60.0" />
+            <Text layoutX="456.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EDIT">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+        </children>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </AnchorPane>
+    <AnchorPane fx:id="mainCanvas" layoutX="16.0" layoutY="95.0" prefHeight="608.0" prefWidth="1098.0" style="-fx-background-color: #F1DBBF;">
+        <children>
+            <TilePane fx:id="tilePane" prefHeight="608.0" prefWidth="1098.0" style="-fx-background-color: lightgray;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0" />
+        </children>
+    </AnchorPane>
+      <Button fx:id="exitButtonMenu" layoutX="1007.0" layoutY="717.0" mnemonicParsing="false" style="-fx-background-color: light blue;" text="EXIT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+</children>
+</AnchorPane>

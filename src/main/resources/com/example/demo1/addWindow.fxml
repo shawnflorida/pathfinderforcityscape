@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="635.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newui.AddWindowController">
+   <children>
+      <Text fx:id="addFileName" layoutX="59.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Element Name">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="selectShapeLabel" layoutX="59.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Shape">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="addButton" layoutX="350.0" layoutY="550.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: gray; -fx-background-radius: 30;" text="Done" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="addCancelButton" layoutX="59.0" layoutY="550.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Cancel">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Button>
+      <Text fx:id="addElementLabel" layoutX="59.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="add element">
+         <font>
+            <Font name="Perpetua Titling MT Bold" size="20.0" />
+         </font>
+      </Text>
+      <HBox layoutX="99.0" layoutY="229.0" prefHeight="63.0" prefWidth="272.0">
+         <children>
+            <Button fx:id="circleShapeButton" mnemonicParsing="false" onAction="#pressCircleShapeButton" prefHeight="107.0" prefWidth="116.0">
+               <graphic>
+                  <Circle fill="DODGERBLUE" radius="46.0" stroke="BLACK" strokeType="INSIDE" />
+               </graphic>
+            </Button>
+            <Button fx:id="squareShapeButton" mnemonicParsing="false" onAction="#pressSquareShapeButton" prefHeight="107.0" prefWidth="116.0">
+               <graphic>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="81.0" opacity="0.81" stroke="BLACK" strokeType="INSIDE" width="91.0" />
+               </graphic>
+            </Button>
+            <Button fx:id="triangleShapeButton" contentDisplay="CENTER" lineSpacing="3.0" mnemonicParsing="false" onAction="#pressTriangleShapeButton" prefHeight="100.0" prefWidth="59.0">
+               <graphic>
+                  <Polygon fill="DODGERBLUE" points="-50.0, 40.0, 50.0, 40.0, -1.0, -44.0" stroke="BLACK" strokeType="INSIDE" />
+               </graphic>
+            </Button>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </HBox>
+      <Label layoutX="67.0" layoutY="352.0" prefHeight="26.0" prefWidth="83.0" text="Select Color">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Label>
+      <ColorPicker fx:id="colorPicker" layoutX="67.0" layoutY="378.0" onAction="#pressColorPicker" prefHeight="34.0" prefWidth="215.0">
+         <value>
+            <Color red="0.7236841917037964" green="0.12061403691768646" blue="0.12061403691768646" />
+         </value>
+      </ColorPicker>
+      <Label layoutX="67.0" layoutY="448.0" prefHeight="26.0" prefWidth="83.0" text="Width">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="448.0" prefHeight="26.0" prefWidth="83.0" text="Height">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="widthBar" layoutX="67.0" layoutY="474.0" onAction="#generateTextFieldValues" prefHeight="30.0" prefWidth="122.0" promptText="Input Width" />
+      <TextField fx:id="heightBar" layoutX="295.0" layoutY="474.0" onAction="#generateTextFieldValues" prefHeight="30.0" prefWidth="122.0" promptText="Input Height" />
+      <TextField fx:id="locationNameTag" layoutX="61.0" layoutY="138.0" onAction="#generateTextFieldValues" prefHeight="30.0" prefWidth="394.0" promptText="Enter Text" />
+   </children>
+</AnchorPane>

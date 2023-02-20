@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="283.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newui.DeleteWindowController">
+   <children>
+      <Text fx:id="deleteElementLabel" layoutX="58.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Element">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="deleteComboBox" layoutX="58.0" layoutY="141.0" prefHeight="30.0" prefWidth="294.0" promptText="Choose Element" />
+      <Button fx:id="deleteButton" layoutX="252.0" layoutY="220.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: gray; -fx-background-radius: 30;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteCancelButton" layoutX="58.0" layoutY="220.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Cancel">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Button>
+      <Text fx:id="deleteLabel" layoutX="58.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="delete element" wrappingWidth="219.79730224609375">
+         <font>
+            <Font name="Perpetua Titling MT Bold" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

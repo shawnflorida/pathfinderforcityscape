@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.mainController">
+   <children>
+      <Text layoutX="120.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAPME">
+         <font>
+            <Font name="Perpetua Titling MT Bold" size="60.0" />
+         </font>
+      </Text>
+      <Button fx:id="createNew" layoutX="139.0" layoutY="320.0" mnemonicParsing="false" onAction="#startClick" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: gray; -fx-background-radius: 30;" text="Create New Project" textFill="#fffbfb">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="openFileProject" layoutX="139.0" layoutY="370.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-background-radius: 30;" text="Open Existing File">
+         <font>
+            <Font name="Tw Cen MT" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="mainPageImage" fitHeight="592.0" fitWidth="575.0" layoutX="388.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Desktop/pics/327166590_3506441349640946_208670180076435684_n.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
